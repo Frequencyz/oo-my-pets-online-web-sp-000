@@ -60,8 +60,8 @@ class Owner
   end
 
   def sell_pets
-    @@cats.each  { |cat| cat.mood = "nervous"}
-    @@dogs.each    
+    @@cats.each { |cat| cat.mood = "nervous"}
+    @@dogs.each 
     
     @@cats.clear
 
