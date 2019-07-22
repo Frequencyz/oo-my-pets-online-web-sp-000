@@ -65,10 +65,7 @@ class Owner
     
     @@cats.clear
 
-    @@dogs.each do |pet|
-      pet.mood = "nervous"
-      pet.owner = nil
-    end
+    
     @@dogs.clear
   end
 
