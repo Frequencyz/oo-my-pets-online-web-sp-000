@@ -46,6 +46,8 @@ class Owner
     new_dog.mood = "happy"
     @@dogs << new_dog
   end
+  
+  
 
   def walk_dogs
     @@dogs.each do |dog|
@@ -53,11 +55,7 @@ class Owner
     end
   end
 
-  def feed_cats
-    @@cats.each do |cat|
-      cat.mood = "happy"
-    end
-  end
+ 
 
   def sell_pets
     @@cats.each  { |dog| dog.mood = "nervous"}
