@@ -47,7 +47,11 @@ class Owner
     @@dogs << new_dog
   end
   
-  
+   def feed_cats
+    @@cats.each do |cat|
+      cat.mood = "happy"
+    end
+  end
 
   def walk_dogs
     @@dogs.each do |dog|
@@ -55,13 +59,10 @@ class Owner
     end
   end
 
- 
-
   def sell_pets
     @@cats.each  { |dog| dog.mood = "nervous"}
-      pet.mood = "nervous"
-      pet.owner = nil
-    end
+      
+    
     @@cats.clear
 
     @@dogs.each do |pet|
