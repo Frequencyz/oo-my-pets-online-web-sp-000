@@ -37,7 +37,6 @@ class Owner
 
   def buy_cat(name)
     new_cat = Cat.new(name, self)
-    new_cat.mood = "happy"
     @@cats << new_cat
   end
 
