@@ -1,7 +1,8 @@
 class Dog
-  # code goes here
+  
   attr_reader :name
   attr_accessor :owner, :mood
+  
   @@all = []
 
   def initialize(name, owner)
@@ -15,4 +16,5 @@ class Dog
   def self.all
     @@all
   end
+  
 end
